@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>     //startinh tag
+
+//we have 2 sections head and body.
+
+<head>//meta data of browser or discribing the headings that should desplay.
+<title>HTML CSS Workshop</title> // at the top of webs.
+</head>
+<body>
+<div>
+<h1>Heading-1</h1>
+//it will healps to group something like if u select it will select perticular heder line.
+
+<h2>Heading-1</h2>
+</div>
+<h3>Heading-1</h3>
+<h4>Heading-1</h4>
+<h5>Heading-1</h5>
+<h6>Heading-1</h6>
+
+<p> This is a paragraph tag </p>
+<a href="https://www.google.com/">Link to google</a> //hyper link reference it shows the google link 
+//image is no need of close tag
+<img src ="https://docs.google.com/document/d/1Z3-b7die3o7Qo3OQ9_cIhvURyl9hVZQJfr8EKBvG8_w/edit" alt="WEB DEV IMAGE" width="500" Height="300">//atrribute online emage
+//source--->src , alt---->alternating the size,shape if u r image is not visuable then this alt will be visible.
+<form>
+<lable for ="name">Full Name:</lable>//if u touch the lable full name then it will atomatically go to that box.
+<br>//it will break line.
+
+<input type="text"  required  place holder ="Full name" id="name ">// required it will makes to sure it should needed
+<br>
+<hr>// thin line break between them boxes and also no closing.
+<input type="number"  required>// place holder shows the sugestion.
+<input type="email"  required>
+<input type="password"  required>
+<input type="checkbox"  required>
+<button>submit</button>      //we can use HTML input submit 
+<input type="submit" value="submit">     //we can use button also to submit
+//input tag no need of closing tag
+
+</form>
+
+</body>
+</html>      //closing tag
