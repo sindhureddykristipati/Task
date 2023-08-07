@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Input for for Even & Odd</title><script>
+var evenNum = [];
+var oddNum = [];
+function handleSubmit() {
+var inputText = document.getElementById("inputText").value;
+var inputNum = parseFloat(inputText);
+if (isNaN(inputNum)) {
+var MessageWarning = document.getElementById("MessageWarning");
+MessageWarning.style.color= "red";
+MessageWarning.innerHTML = "Enter the valid number.";
+} else {
+if (inputNum % 2 === 0) {
+evenNum.push(inputNum);
+} else {
+    oddNum.push(inputNum);
+}
+displayOutput();
+}
+}
+function displayOutput() {
+var listofEven = document.getElementById("listofEven");
+var listofOdd = document.getElementById("listofOdd");
+listofEven.innerHTML = "";
+listofOdd.innerHTML = "";
+for (var i = 0; i < evenNum.length; i++) {
+var itemList = document.createElement("li");
+itemList.appendChild(document.createTextNode (evenNum[i]));
+listofEven.appendChild(itemList);
+}
+for (var i =0; i < oddNum.length; i++) {
+var itemList = document.createElement("li");
+itemList.appendChild(document.createTextNode (oddNum[i]));
+listofOdd.appendChild(itemList);
+}
+}
+</script>
+</head>
+<body>
+    <h1>Ultimez Interview - Task One</h1>
+    <p>
+      Storing input textbox value into an array, displaying the separate Even
+      Array and Odd Array using Javascript
+    </p><form>
+<label for="inputText">Task:</label><br><br>
+<input type="text" id="inputText" name="inputText" required>
+<br>
+<span id="MessageWarning"></span>
+<br><br>
+<input type="button" value="Submit" onclick="handleSubmit()">
+</form>
+<h2>Output Result:</h2>
+<h2>Even Array Numbers: </h2>
+<ul id="listofEven"></ul>
+<h2>Odd Array Numbers: </h2>
+<ul id="listofOdd"></ul>
+</body>
+</html>
+
+
